@@ -1,0 +1,35 @@
+<Welcome>
+    BoxLayout:
+        orientation:'vertical'
+        size:root.size
+        padding:(200,100,100,300) # padding:(left, top, right, bottom)
+        Label:
+            id: lab1
+            text: "Welcome to IQ test"
+            font_size: 80
+
+        Label:
+            id: lab1
+            text: "Answer the following questions:"
+            font_size: 80
+        Button:
+            size: 100, 200
+            text: 'hide banner'
+            pos: 0,0
+            font_size: 80
+            on_release:
+                app.hide_banner()
+        Button:
+            size: 50, 100
+            text: 'show banner'
+            pos: 0,0
+            font_size: 80
+            on_release:
+                app.show_banner()
+        Button:
+            size: 100, 200
+            text: 'show interstitial'
+            pos: 0,0
+            font_size: 80
+            on_release:
+                app.show_interstitial()
